@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>ITMO.ASP.NET_Lab._01_Ex._01_WebAppCoreProduct</RootNamespace>
+  </PropertyGroup>
+
+</Project>

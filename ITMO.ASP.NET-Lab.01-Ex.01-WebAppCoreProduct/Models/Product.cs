@@ -10,6 +10,5 @@ namespace ITMO.ASP.NET_Lab._01_Ex._01_WebAppCoreProduct.Models
 	{
 		public string Name { get; set; }
 		public decimal? Price { get; set; }
-		//public string MessageRezult { get; set; }
 	}
 }

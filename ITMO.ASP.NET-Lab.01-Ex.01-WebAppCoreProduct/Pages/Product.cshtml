@@ -1,4 +1,4 @@
-﻿@page
+﻿@page  "{handler?}"
 @model ITMO.ASP.NET_Lab._01_Ex._01_WebAppCoreProduct.Pages.ProductModel
 @{
     
@@ -8,7 +8,14 @@
     <label for="name">Название товара</label><br />
     <input type="text" name="name" /><br />
     <label for="price">Цена</label><br />
-    <input type="number" name="price" /><br /><br />
-    <input type="submit" value="Получить скидку" /><br />
+    <input type="number" name="price" /><br />
+   
+    <input type="submit" asp-page-handler="" value="Получить базовую скидку" /><br /><br />
+    <label for="discont">Введите свою скидку(%)</label><br />
+    <input type="number" name="discont" /><br />
+    <input type="submit" asp-page-handler="Discont" value="С учетом своей скидки"/><br /><br />
+    
+    <!-- кнопка получения рандомной скидки -->
+    <input type="submit" asp-page-handler="Random" value="Случайная скидка"/><br />
 </form>
 <h3>@Model.MessageRezult</h3>

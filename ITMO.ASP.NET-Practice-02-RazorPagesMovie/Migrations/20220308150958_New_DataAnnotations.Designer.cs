@@ -4,14 +4,16 @@ using ITMO.ASP.NET_Practice_02_RazorPagesMovie.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ITMO.ASP.NET_Practice_02_RazorPagesMovie.Migrations
 {
     [DbContext(typeof(ITMOASPNET_Practice_02_RazorPagesMovieContext))]
-    partial class ITMOASPNET_Practice_02_RazorPagesMovieContextModelSnapshot : ModelSnapshot
+    [Migration("20220308150958_New_DataAnnotations")]
+    partial class New_DataAnnotations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

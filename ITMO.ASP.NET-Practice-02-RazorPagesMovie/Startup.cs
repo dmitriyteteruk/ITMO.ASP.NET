@@ -9,6 +9,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ITMO.ASP.NET_Practice_02_RazorPagesMovie.Data;
+using System.Collections;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 namespace ITMO.ASP.NET_Practice_02_RazorPagesMovie
 {
@@ -52,6 +55,15 @@ namespace ITMO.ASP.NET_Practice_02_RazorPagesMovie
 			{
 				endpoints.MapRazorPages();
 			});
+
+			var defaultCulture = new CultureInfo("en-US");
+			var localizationOptions = new RequestLocalizationOptions
+			{
+				DefaultRequestCulture = new RequestCulture(defaultCulture),
+				SupportedCultures = new List<CultureInfo> { defaultCulture },
+				SupportedUICultures = new List<CultureInfo> { defaultCulture }
+			};
+			app.UseRequestLocalization(localizationOptions);
 		}
 	}
 }

@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.ASP.NET-Lab.01-Ex.01-WebAppCoreProduct", "ITMO.ASP.NET-Lab.01-Ex.01-WebAppCoreProduct\ITMO.ASP.NET-Lab.01-Ex.01-WebAppCoreProduct.csproj", "{3C3A0774-ADD9-4866-B903-20B1A9228EEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-02-RazorPagesMovie", "ITMO.ASP.NET-Practice-02-RazorPagesMovie\ITMO.ASP.NET-Practice-02-RazorPagesMovie.csproj", "{F827878B-9B67-424E-A3A5-7BE2526B2046}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.ASP.NET-Practice-02-RazorPagesMovie", "ITMO.ASP.NET-Practice-02-RazorPagesMovie\ITMO.ASP.NET-Practice-02-RazorPagesMovie.csproj", "{F827878B-9B67-424E-A3A5-7BE2526B2046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-MVC-Lab.01-WebMVCR1", "ITMO.ASP.NET-Practice-MVC-Lab.01-WebMVCR1\ITMO.ASP.NET-Practice-MVC-Lab.01-WebMVCR1.csproj", "{A63F0B85-78AE-4AF1-9487-BE38A95D1060}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F827878B-9B67-424E-A3A5-7BE2526B2046}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F827878B-9B67-424E-A3A5-7BE2526B2046}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F827878B-9B67-424E-A3A5-7BE2526B2046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A63F0B85-78AE-4AF1-9487-BE38A95D1060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63F0B85-78AE-4AF1-9487-BE38A95D1060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63F0B85-78AE-4AF1-9487-BE38A95D1060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63F0B85-78AE-4AF1-9487-BE38A95D1060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

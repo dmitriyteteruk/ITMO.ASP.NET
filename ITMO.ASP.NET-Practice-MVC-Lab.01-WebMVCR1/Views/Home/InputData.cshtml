@@ -3,10 +3,34 @@
 *@
 @model ITMO.ASP.NET_Practice_MVC_Lab._01_WebMVCR1.Models.Person
 @{
+
+    ViewBag.Title = "Ввод данных";
 }
 
 <div>
-    <form method="post">
+@using (Html.BeginForm())
+    {
+        <table align="center" width="400px">
+            <tr>
+                <td><p>Введите имя:</p></td>
+                <td>@Html.TextBox("FirstName")</td>
+            </tr>
+            <tr>
+                <td><p>Введите фамилию:</p></td>
+                <td>@Html.TextBoxFor(x => x.LastName)</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Отправить" />
+                </td>
+            </tr>
+        </table>
+    }
+
+
+
+@* НАЧАЛО - Код ниже из ЛАБ 3. *@    
+@*<form method="post">
         <table>
             <tr>
                 <td><p>Введите имя:</p></td>
@@ -21,5 +45,6 @@
                 <td></td>
             </tr>
         </table>
-    </form>
+    </form>*@
+@* КОНЕЦ - Код ниже из ЛАБ 3. *@
 </div>

@@ -1,6 +1,8 @@
 ﻿@model ITMO.ASP.NET_Practice_MVC_Lab._01_WebMVCR1.Models.PersonRepository
 
 @{
+ 
+    ViewBag.Title = "Кто пойдет";
 }
 
 <div> 
@@ -11,5 +13,8 @@
         </ul>
      <p> 
          @Html.ActionLink("На главную", "Index")
+    </p>
+         <p> 
+         @Html.ActionLink("Добавить еще одну запись", "InputData")
     </p>
 </div>

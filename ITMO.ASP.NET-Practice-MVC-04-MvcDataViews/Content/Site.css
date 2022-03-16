@@ -1,0 +1,36 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    padding: 20px;
+    border: solid medium green;
+    font-size: 15pt;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 2px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+button[type=submit] {
+    margin-top: 15px;
+    padding: 5px;
+    width: 350px;
+}
+

@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.ASP.NET-Lab.01-Ex.01-W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.ASP.NET-Practice-02-RazorPagesMovie", "ITMO.ASP.NET-Practice-02-RazorPagesMovie\ITMO.ASP.NET-Practice-02-RazorPagesMovie.csproj", "{F827878B-9B67-424E-A3A5-7BE2526B2046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-MVC-Lab.01-WebMVCR1", "ITMO.ASP.NET-Practice-MVC-Lab.01-WebMVCR1\ITMO.ASP.NET-Practice-MVC-Lab.01-WebMVCR1.csproj", "{A63F0B85-78AE-4AF1-9487-BE38A95D1060}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.ASP.NET-Practice-MVC-Lab.01-WebMVCR1", "ITMO.ASP.NET-Practice-MVC-Lab.01-WebMVCR1\ITMO.ASP.NET-Practice-MVC-Lab.01-WebMVCR1.csproj", "{A63F0B85-78AE-4AF1-9487-BE38A95D1060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-MVC-04-MvcDataViews", "ITMO.ASP.NET-Practice-MVC-04-MvcDataViews\ITMO.ASP.NET-Practice-MVC-04-MvcDataViews.csproj", "{A4C8C67A-B928-48DF-969B-4AA31F22F6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-05-MvcCreditApp1", "ITMO.ASP.NET-Practice-05-MvcCreditApp1\ITMO.ASP.NET-Practice-05-MvcCreditApp1.csproj", "{D0C8F61F-7571-4F20-A8DC-B5C38086960B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{A63F0B85-78AE-4AF1-9487-BE38A95D1060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A63F0B85-78AE-4AF1-9487-BE38A95D1060}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A63F0B85-78AE-4AF1-9487-BE38A95D1060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C8C67A-B928-48DF-969B-4AA31F22F6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C8C67A-B928-48DF-969B-4AA31F22F6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C8C67A-B928-48DF-969B-4AA31F22F6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C8C67A-B928-48DF-969B-4AA31F22F6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C8F61F-7571-4F20-A8DC-B5C38086960B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C8F61F-7571-4F20-A8DC-B5C38086960B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C8F61F-7571-4F20-A8DC-B5C38086960B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C8F61F-7571-4F20-A8DC-B5C38086960B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

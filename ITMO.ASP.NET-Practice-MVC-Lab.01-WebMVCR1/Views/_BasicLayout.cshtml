@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>@ViewBag.Title</title>
+	<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+	<!-- проверить как добавить ссылку на css в .net Core 5.0-->
+</head>
+<body>
+	<div>
+		<h1>ОАО "Добро пожаловать!"</h1>
+		<div>
+			@RenderBody()
+		</div>
+	</div>
+</body>
+</html>

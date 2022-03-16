@@ -29,6 +29,8 @@ namespace ITMO.ASP.NET_Practice_MVC_Lab._01_WebMVCR1
 
 			app.UseRouting();
 
+			app.UseStaticFiles();
+
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapControllerRoute(

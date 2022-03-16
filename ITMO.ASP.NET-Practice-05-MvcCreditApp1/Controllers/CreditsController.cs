@@ -7,115 +7,110 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ITMO.ASP.NET_Practice_05_MvcCreditApp1.Models;
-using System.Web.UI;
-
 
 namespace ITMO.ASP.NET_Practice_05_MvcCreditApp1.Controllers
 {
-    public class BidsController : Controller
+    public class CreditsController : Controller
     {
         private CreditContext db = new CreditContext();
 
-        [OutputCache(Duration = 10, Location = OutputCacheLocation.ServerAndClient)]
-        
-        // GET: Bids
+        // GET: Credits
         public ActionResult Index()
         {
-            return View(db.Bids.ToList());
+            return View(db.Credits.ToList());
         }
 
-        // GET: Bids/Details/5
+        // GET: Credits/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Bid bid = db.Bids.Find(id);
-            if (bid == null)
+            Credit credit = db.Credits.Find(id);
+            if (credit == null)
             {
                 return HttpNotFound();
             }
-            return View(bid);
+            return View(credit);
         }
 
-        // GET: Bids/Create
+        // GET: Credits/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Bids/Create
+        // POST: Credits/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "BidId,Name,CreditHead,BidDate")] Bid bid)
+        public ActionResult Create([Bind(Include = "CreditId,Head,Period,Sum,Procent")] Credit credit)
         {
             if (ModelState.IsValid)
             {
-                bid.BidDate = DateTime.Now;
-                db.Bids.Add(bid);
+                db.Credits.Add(credit);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(bid);
+            return View(credit);
         }
 
-        // GET: Bids/Edit/5
+        // GET: Credits/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Bid bid = db.Bids.Find(id);
-            if (bid == null)
+            Credit credit = db.Credits.Find(id);
+            if (credit == null)
             {
                 return HttpNotFound();
             }
-            return View(bid);
+            return View(credit);
         }
 
-        // POST: Bids/Edit/5
+        // POST: Credits/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "BidId,Name,CreditHead,BidDate")] Bid bid)
+        public ActionResult Edit([Bind(Include = "CreditId,Head,Period,Sum,Procent")] Credit credit)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(bid).State = EntityState.Modified;
+                db.Entry(credit).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(bid);
+            return View(credit);
         }
 
-        // GET: Bids/Delete/5
+        // GET: Credits/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Bid bid = db.Bids.Find(id);
-            if (bid == null)
+            Credit credit = db.Credits.Find(id);
+            if (credit == null)
             {
                 return HttpNotFound();
             }
-            return View(bid);
+            return View(credit);
         }
 
-        // POST: Bids/Delete/5
+        // POST: Credits/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Bid bid = db.Bids.Find(id);
-            db.Bids.Remove(bid);
+            Credit credit = db.Credits.Find(id);
+            db.Credits.Remove(credit);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

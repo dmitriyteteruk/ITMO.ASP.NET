@@ -43,20 +43,6 @@ namespace ITMO.ASP.NET_Practice_05_MvcCreditApp1.Controllers
 				"</br>Ваша заявка будет рассмотрена в течении 10 дней.";
 		}
 
-		public ActionResult About()
-		{
-			ViewBag.Message = "Your application description page.";
-
-			return View();
-		}
-
-		public ActionResult Contact()
-		{
-			ViewBag.Message = "Your contact page.";
-
-			return View();
-		}
-
 
 	}
 }

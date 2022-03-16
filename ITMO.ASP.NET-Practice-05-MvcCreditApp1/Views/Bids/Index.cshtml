@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ITMO.ASP.NET_Practice_05_MvcCreditApp1.Models.Bid>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Заявки";
 }
 
-<h2>Index</h2>
+<h2>Заявки</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Создать новую заявку", "Create")
 </p>
 <table class="table">
     <tr>
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.BidDate)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BidId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BidId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BidId })
+            @Html.ActionLink("Изменить", "Edit", new { id=item.BidId }) |
+            @Html.ActionLink("Подробнее", "Details", new { id=item.BidId }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.BidId })
         </td>
     </tr>
 }

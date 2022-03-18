@@ -43,6 +43,17 @@ namespace ITMO.ASP.NET_Practice_05_MvcCreditApp1.Controllers
 				"</br>Ваша заявка будет рассмотрена в течении 10 дней.";
 		}
 
+		public ActionResult BidSearch(string name)
+		{
+			var allBids = db.Bids.Where(a => a.CreditHead.Contains(name)).ToList();
+			if (allBids.Count == 0)
+			{
+				return Content("Указанный кредит " + name + " не найден.");
+				// http not found
+			}
+			return PartialView(allBids);
+		}
+
 
 	}
 }

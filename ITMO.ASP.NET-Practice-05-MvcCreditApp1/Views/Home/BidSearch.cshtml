@@ -1,14 +1,15 @@
 ﻿@model IEnumerable<ITMO.ASP.NET_Practice_05_MvcCreditApp1.Models.Bid>
-	<div id="results">
-		<h4>
-			Все заявители кредита "@Model.First().CreditHead"
-		</h4>
-		<ul>
-			@foreach (var item in Model)
-			{
-				<li>
-					@item.Name
-				</li>
-			}
-		</ul>
-	</div>
+<div id="results">
+	<h4>
+		Все заявители кредита "@Model.First().CreditHead"
+	</h4>
+	<ul>
+		@foreach (var item in Model)
+		{
+			<li>
+				@item.Name
+			</li>
+		}
+	</ul>
+	@Html.ActionLink("Вернуться на главную", "Index")
+</div>

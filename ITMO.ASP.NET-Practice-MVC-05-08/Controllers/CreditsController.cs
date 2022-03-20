@@ -10,7 +10,7 @@ using ITMO.ASP.NET_Practice_MVC_05_08.Models;
 
 namespace ITMO.ASP.NET_Practice_MVC_05_08.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "admin")]
     public class CreditsController : Controller
     {
         private CreditContext db = new CreditContext();

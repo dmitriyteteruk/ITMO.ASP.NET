@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ITMO.ASP.NET_Practice_MVC_05_08.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
 
 namespace ITMO.ASP.NET_Practice_MVC_05_08.Controllers
 {
@@ -53,6 +55,20 @@ namespace ITMO.ASP.NET_Practice_MVC_05_08.Controllers
 				// http not found
 			}
 			return PartialView(allBids);
+		}
+
+		public ActionResult About()
+		{
+			ViewBag.Message = "Страница описания приложения.";
+			IList<string> roles = new List<string>{ "Роль не определена"};
+			ApplicationUserManager userManager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+			ApplicationUser user = userManager.FindByEmail(User.Identity.Name);
+			if (user != null)
+				roles = userManager.GetRoles(user.Id);
+			ViewBag.rol = roles;
+
+			return View();
+
 		}
 
 

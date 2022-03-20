@@ -19,6 +19,7 @@ namespace ITMO.ASP.NET_Practice_MVC_05_08
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             Database.SetInitializer(new CreditsDbInitializer());
+            Database.SetInitializer(new AppDbInitializer());
         }
     }
 }

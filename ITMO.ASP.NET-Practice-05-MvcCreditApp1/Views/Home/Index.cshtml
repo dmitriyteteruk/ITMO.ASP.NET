@@ -1,8 +1,6 @@
 ﻿@{
     ViewBag.Title = "Главная";
 }
-
-
         <h2>Программы кредитования</h2>
         <table class="table">
             <tr>
@@ -45,14 +43,11 @@
     <h5>Просмотр заявлений по кредиту</h5>
 </div>
 <div>
-    @using (Ajax.BeginForm("BidSearch", new AjaxOptions
-	{
-        UpdateTargetId = "results"
-	}))
+    @using (Ajax.BeginForm("BidSearch", new AjaxOptions  { UpdateTargetId = "results" }))
 			{
                 <input type="text" name="Name" />
                 <input type="submit" value="Поиск" />
 			}
-    <div id="results"> </div>
+            <div id="results"> </div>
 </div>
 

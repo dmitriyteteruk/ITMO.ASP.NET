@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Главная";
+}
+        <h2>Программы кредитования</h2>
+        <table class="table">
+            <tr>
+                <td>
+                    <p>Тип кредита</p>
+                </td>
+                <td>
+                    <p>Период кредитования</p>
+                </td>
+                <td>
+                    <p>Максимальная сумма</p>
+                </td>
+                <td>
+                    <p>Ставка %</p>
+                </td>
+            </tr>
+            @foreach (var c in ViewBag.Credits)
+			{
+		    <tr>
+			    <td>
+				    <p>@c.Head</p>
+			    </td>
+			    <td>
+				    <p>@c.Period</p>
+			    </td>
+			    <td>
+				    <p>@c.Sum</p>
+			    </td>
+			    <td>
+				    <p>@c.Procent %</p>
+			    </td>
+		    </tr>
+			}
+        </table>
+        <p>
+            <a class="btn btn-default" href="/Home/CreateBid">Подать заявку на получение кредита &raquo;</a>
+        </p>
+        
+<div>
+    <h5>Просмотр заявлений по кредиту</h5>
+</div>
+<div>
+    @using (Ajax.BeginForm("BidSearch", new AjaxOptions  { UpdateTargetId = "results" }))
+			{
+                <input type="text" name="Name" />
+                <input type="submit" value="Поиск" />
+			}
+            <div id="results"> </div>
+</div>
+

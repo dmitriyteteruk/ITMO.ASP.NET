@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-MVC-0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-05-MvcCreditApp1", "ITMO.ASP.NET-Practice-05-MvcCreditApp1\ITMO.ASP.NET-Practice-05-MvcCreditApp1.csproj", "{D0C8F61F-7571-4F20-A8DC-B5C38086960B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-MVC-05-08", "ITMO.ASP.NET-Practice-MVC-05-08\ITMO.ASP.NET-Practice-MVC-05-08.csproj", "{B80C4A9D-BDD3-42E1-9E1D-3A15B0734064}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D0C8F61F-7571-4F20-A8DC-B5C38086960B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0C8F61F-7571-4F20-A8DC-B5C38086960B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0C8F61F-7571-4F20-A8DC-B5C38086960B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80C4A9D-BDD3-42E1-9E1D-3A15B0734064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80C4A9D-BDD3-42E1-9E1D-3A15B0734064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80C4A9D-BDD3-42E1-9E1D-3A15B0734064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80C4A9D-BDD3-42E1-9E1D-3A15B0734064}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,33 @@
+﻿@{
+	ViewBag.Title = "Students";
+}
+
+<h2>Список студентов</h2>
+
+@using (Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+	<hr />
+
+			<table class="table">
+				<tr>
+					<td>
+						<p><b>ФИО студента</b></p>
+					</td>
+				</tr>
+				@foreach (var s in ViewBag.Students)
+				{
+					<tr>
+						<td>
+							<p>@s.StudentName</p>
+						</td>
+					</tr>
+				}
+			</table>
+
+}
+
+<p>
+	<a class="btn btn-default" href="/Home/AddStudent">Добавить студента</a>
+</p>
+

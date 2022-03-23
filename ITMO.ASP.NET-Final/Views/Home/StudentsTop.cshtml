@@ -1,0 +1,70 @@
+﻿@model ITMO.ASP.NET_Final.Models.SumScore
+@*<p>
+		@Html.ActionLink("Create New", "Create")
+	</p>*@
+
+@{
+	ViewBag.Title = "Лучше и худшие студенты";
+}
+
+
+<h2>5 самых лучших студентов</h2>
+<table class="table">
+	<tr>
+		<th>
+			<p><b>ФИО студента</b></p>
+		</th>
+		<th>
+			<p><b>Сумма баллов</b></p>
+		</th>
+		
+	</tr>
+
+	@foreach (var item in ViewBag.TopFive)
+	{
+		<tr>
+			<td>
+				@item.StName
+			</td>
+			<td>
+				@item.Summ
+			</td>
+			@*<td>
+					@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+					@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+					@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+				</td>*@
+		</tr>
+	}
+
+</table>
+
+<h2>5 самых худших студентов</h2>
+<table class="table">
+	<tr>
+		<th>
+			<p><b>ФИО студента</b></p>
+		</th>
+		<th>
+			<p><b>Сумма баллов</b></p>
+		</th>
+	</tr>
+
+	@foreach (var item in ViewBag.BottomFive)
+	{
+		<tr>
+			<td>
+				@item.StName
+			</td>
+			<td>
+				@item.Summ
+			</td>
+			@*<td>
+					@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+					@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+					@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+				</td>*@
+		</tr>
+	}
+
+</table>

@@ -1,0 +1,37 @@
+﻿@model ITMO.ASP.NET_Final.Models.SumScore
+@{
+	ViewBag.Title = "Сумма баллов";
+}
+
+<h2>Список студентов</h2>
+
+@using (Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+	<hr />
+
+	<table class="table">
+		<tr>
+			<td>
+				<p><b>ФИО студента</b></p>
+			</td>
+			<td>
+				<p><b>Сумма баллов по всем дисциплинам</b></p>
+			</td>
+		</tr>
+		@foreach (var s in ViewBag.Sum)
+		{
+			<tr>
+				<td>
+					<p>@s.StName</p>
+				</td>
+				<td>
+					<p>@s.Summ</p>
+				</td>
+			</tr>
+		}
+	</table>
+
+}
+
+

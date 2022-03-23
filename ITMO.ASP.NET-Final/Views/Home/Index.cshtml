@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Главная (Home/Index.cshtml)";
+}
+
+
+		<h3>Все отметки</h3>
+		<table class="table">
+			<tr>
+				<td>
+					<p><b>ФИО студента</b></p>
+				</td>
+				<td>
+					<p><b>Дисциплина</b></p>
+				</td>
+				<td>
+					<p><b>Отметка</b></p>
+				</td>
+				<td>
+					<p><b>Дата</b></p>
+				</td>
+			</tr>
+			@foreach (var s in ViewBag.Scores)
+			{
+				<tr>
+					<td>
+						<p>@s.StudentName</p>
+					</td>
+					<td>
+						<p>@s.Discipline</p>
+					</td>
+					<td>
+						<p>@s.Score</p>
+					</td>
+					<td>
+						<p>@s.ScoreDate</p>
+					</td>
+				</tr>
+			}
+		</table>
+		<p>
+			<a class="btn btn-default" href="/Home/AddScore">Добавить запись</a></p>

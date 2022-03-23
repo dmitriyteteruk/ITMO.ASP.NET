@@ -1,0 +1,60 @@
+﻿@{
+	ViewBag.Title = "Успеваемость";
+}
+
+<h2>Добавление отметок</h2>
+
+<form method="post" action="">
+			<table class="table">
+				<tr>
+					<td>
+						<p>Выберите Студента</p>
+					</td>
+					<td>
+						<select name="StudentName">
+							@foreach (var sln in ViewBag.Students)
+							{
+								<option>@sln.StudentName</option>
+							}
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Выберите дисциплину</p>
+					</td>
+					<td>
+						<select name="Discipline">
+							@foreach (var dis in ViewBag.Discipline)
+							{
+								<option>@dis.DisciplineName</option>
+							}
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Выберите отметку</p>
+					</td>
+					<td>
+						<select name="Score">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="Отправить" />
+					</td>
+				</tr>
+			</table>
+		</form>
+
+
+		@section Scripts {
+			@Scripts.Render("~/bundles/jqueryval")
+		}

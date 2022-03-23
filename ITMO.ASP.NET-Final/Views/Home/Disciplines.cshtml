@@ -1,0 +1,33 @@
+﻿@{
+	ViewBag.Title = "Дисциплины";
+}
+
+<h2>Дисциплины</h2>
+
+@using (Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+	<hr />
+
+	<table class="table">
+		<tr>
+			<td>
+				<p><b>Дисциплина</b></p>
+			</td>
+		</tr>
+		@foreach (var s in ViewBag.Discipline)
+		{
+			<tr>
+				<td>
+					<p>@s.DisciplineName</p>
+				</td>
+			</tr>
+		}
+	</table>
+
+}
+
+<p>
+	<a class="btn btn-default" href="/Home/AddDiscipline">Добавить дисциплину</a>
+</p>
+

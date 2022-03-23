@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-05-Mv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Practice-MVC-05-08", "ITMO.ASP.NET-Practice-MVC-05-08\ITMO.ASP.NET-Practice-MVC-05-08.csproj", "{B80C4A9D-BDD3-42E1-9E1D-3A15B0734064}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.ASP.NET-Final", "ITMO.ASP.NET-Final\ITMO.ASP.NET-Final.csproj", "{E647D81B-5681-4A7E-B123-D6DC857677F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{B80C4A9D-BDD3-42E1-9E1D-3A15B0734064}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B80C4A9D-BDD3-42E1-9E1D-3A15B0734064}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B80C4A9D-BDD3-42E1-9E1D-3A15B0734064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E647D81B-5681-4A7E-B123-D6DC857677F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E647D81B-5681-4A7E-B123-D6DC857677F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E647D81B-5681-4A7E-B123-D6DC857677F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E647D81B-5681-4A7E-B123-D6DC857677F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

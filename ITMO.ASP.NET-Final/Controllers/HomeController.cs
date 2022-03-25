@@ -6,6 +6,10 @@ using System.Web.Mvc;
 using ITMO.ASP.NET_Final.Models;
 using ITMO.ASP.NET_Final.Controllers;
 using System.Data.Entity;
+using System.IO;
+using System.Text;
+using System.Net.Http.Headers;
+using Rotativa;
 
 namespace ITMO.ASP.NET_Final.Controllers
 {
@@ -194,5 +198,14 @@ namespace ITMO.ASP.NET_Final.Controllers
 			
 			return RedirectToAction("Disciplines", "Home");
 		}
+
+		// сохранение представлений в PDF через Rotativa с результатом	  
+
+		public ActionResult PrintViewToPdf()
+		{
+			var report = new ActionAsPdf("Index");
+			return report;
+		}
+
 	}
 }

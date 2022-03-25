@@ -19,14 +19,14 @@
 				<p><b>Сумма баллов по всем дисциплинам</b></p>
 			</td>
 		</tr>
-		@foreach (var s in ViewBag.Sum)
+		@foreach (var item in ViewBag.Sum)
 		{
 			<tr>
 				<td>
-					<p>@s.StName</p>
+					<p>@item.StName</p>
 				</td>
 				<td>
-					<p>@s.Summ</p>
+					<p>@item.Summ</p>
 				</td>
 			</tr>
 		}

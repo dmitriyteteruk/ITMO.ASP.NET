@@ -203,8 +203,14 @@ namespace ITMO.ASP.NET_Final.Controllers
 
 		public ActionResult PrintViewToPdf()
 		{
-			var report = new ActionAsPdf("Index");
-			return report;
+			var printIndex = new ActionAsPdf("Index");
+			return printIndex;
+		}
+
+		public ActionResult PrintSumScore()
+		{
+			var printScores = new ActionAsPdf("ViewSumScore");
+			return printScores;
 		}
 
 	}
